@@ -2,7 +2,7 @@
 <html lang="en">
 
     <head>
-        <meta name="description" content="Webpage description goes here" />
+        <meta name="description" content="Learn more about the site author, Isaac Bratcher"/>
         <meta charset="utf-8">
         <title>Bratcher Cubing!</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,18 +22,31 @@
                 float: center;
                 padding-bottom: 30px;
             }
-            iframe{
-                margin: 0 auto;
-                display: block;
-                width: 560px;
-                height: 315px;
+            #top{
+                column-count: 2;
+                column-width: 45vh;
+            }
+            #column{
+                height: 9.295vh;
+            }
+            .linkedin{
+                height: 64px;
+                width: 64px;
+                float: right;
+                margin-right: 1%;
+            }
+            form{
+                display: inline-block;
+            }
+            div{
+                text-align: center;
             }
         </style>
     </head>
 
     <body>
         <header>
-            <a href="index.html"><img src="Assets/TempLogo.png" id="logo"></a>
+            <a href="index.html"><img src="Assets/TempLogo.png" class="logo"></a>
             <h1><strong>Bratcher Cubing!</strong></h1>
             <nav>
                 <a href="index.html">Home</a>
@@ -46,46 +59,61 @@
             &nbsp;
         </div>
         <main>
-            <article>
-                <h2>Welcome to Bratcher Cubing</h2>
+            <article id="top">
+                <h2>Who Am I?</h2>
                 <p>
-                    This site is a resource to <i>anyone</i> who is even slightly interested in solving Rubik's Cubes.
-                    The goal is to create a more friendly environment for beginners and veterans alike to share experiences and learn how to quicken their own speeds.
-                    It will also serve as a bit of a contact page for myself so that anyone can get in touch with me for whatever may concern them.
-                    <strong>Below is a video on one of my solves.</strong>
+                    Thanks for visiting my website.
+                    My name is Isaac Bratcher. 
+                    I'm a dual-enrolled student, currently working towards a software engineering degree at OCC.
+                    Obviously, one of my hobbies is messing around with Rubik's cubes. 
+                    But I also build games in Unity, even participating in Game Jams.
+                    I have high expectations for myself, and my plans for the future.
+                    So stay in touch and expect great things!<br>
+                </p>
+
+                <div><br><br><br><br></div>
+
+                <h2>My Experience</h2>
+                <p>
+                    My experience is honestly all over the spectrum.
+                    I have coordinated events with over 3000 active participants, moderating that same community and making sure everything goes smoothly.
+                    I'm also an administrator of Neurodivergent of FIRST. 
+                    Here we give a voice to those who might be too afraid to speak for themselves within robotics. 
+                    But speaking of robotics, I have been the lead programmer of 7211 Team Hollywood for 4 years in a row. 
+                    I'm also the Vice President of iTeam, a student led organization at OSTC.
                 </p>
             </article>
-            <iframe src="https://www.youtube.com/embed/ECAnEEVUhvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
+            <hr>
             <article>
-                <h2>A Site Overview</h2>
-                <p>Here I will briefly go over some of the details of this website to make it a little easier to comprehend for you.</p>
-                <h3>Home Page (hint: you're on it!)</h3>
+                <h2>Contact Me!</h2>
+                <a href="https://www.linkedin.com/in/isaacbratcher/"><img src="Assets/linkedin-logo.png" class="linkedin"></a>
                 <p>
-                    Welcome to the home page! Here I will simply be giving you a aesthetically pleasing introduction to the website.<br>
-                    It will act as a central point for every page on the site.
-                    It may even act as a bit of a quick news digest page regarding the site.
-                </p>
-                <h3>Solve the Cube!</h3>
-                <p>
-                    This page is going to be centered around the beginners of speed cubing.
-                    Quite simply, it is a step by step guide on how to solve a Rubik's Cube.
-                    It goes over the most popular method, the Fredrich method, but there are many other methods to try out.
-                    Pick one that suits your own tastes!
-                </p>
-                <h3>Challenge Me</h3>
-                <p>
-                    This page may feature a bunch of my own solve statistics.
-                    It also includes a scrambler widget and timer for your own struggles.
-                    By no means should you measure yourself against someone else in order to judge your skill, but the option is there for those of you daring enough!
-                </p>
-                <h3>About Me</h3>
-                <p>
-                    The fourth and final page is my about page.
-                    Here you can find a form to send me any comments or questions about certain aspects of the website or cubing itself.
-                    You might also find other places I'm actively partipating in, so come find me!
+                    Thank you for taking the time to look at my site!
+                    However, if you are still interested or still confused on certain parts of the site, please contact me directly with the form provided below.
+                    Alternatively, message me on LinkedIn:
                 </p>
             </article>
+            <div>
+                <form action="mailto:isaac.j.bratcher@gmail.com">
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    How old are you?
+                    <select>
+                        <option >--Select an Age Group--</option>
+                        <option>Less than 18</option>
+                        <option>18-25</option>
+                        <option>26-33</option>
+                        <option>34-41</option>
+                        <option>Over 41</option>
+                    </select><br><br>
+                    Write your email below: <br>
+                    <textarea rows="10" cols="50"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            
         </main>
     </body>
 </html>
