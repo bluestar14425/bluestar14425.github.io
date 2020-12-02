@@ -29,6 +29,22 @@
                 width: 560px;
                 height: 315px;
             }
+            ol{
+                margin-left: 7.5%;
+            }
+            .exampleDiv{
+                width: 26%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .exCaption{
+                text-align: center;
+                font-size: 1em; 
+            }
+            .steps{
+                display: block;
+                margin-left: 20%;
+            }
         </style>
     </head>
 
@@ -48,44 +64,133 @@
         </div>
         <main>
             <article>
-                <h2>Welcome to Bratcher Cubing</h2>
+                <h2>So You Want to Solve a Rubik's Cube...</h2>
                 <p>
-                    This site is a resource to <i>anyone</i> who is even slightly interested in solving Rubik's Cubes.
-                    The goal is to create a more friendly environment for beginners and veterans alike to share experiences and learn how to quicken their own speeds.
-                    It will also serve as a bit of a contact page for myself so that anyone can get in touch with me for whatever may concern them.
-                    <strong>Below is a video on one of my solves.</strong>
+                    You may be one of those people who would consider this "the hardest thing they've tried to do".
+                    But, as any experienced speedsolver will tell you, it is a lot easier once you learn how to solve it.
+                    In the end, the trick is getting up your speeds. 
+                    Nonetheless, welcome to one of the best hobbies you'll quickly find yourself sucked into. 
+                    Starting off simple, we're going to go over the <strong>EASIEST</strong> method for solving a Rubik's cube.
+                    This is commonly referred to as "the beginner's method" but it is really a simplified version of the Fredrich method.
+                    If you plan to improve your speeds, it is almost guaranteed that you will have to learn the real Fredrich method.<br>
+
+                    First things first, check out my friends at <a href="https://ruwix.com/the-rubiks-cube/notation/">Ruwix</a>. 
+                    In order to understand how to manuever your Rubik's cube using some of the algorithms on this page, you need to know notation.<br>
                 </p>
             </article>
-            <iframe src="https://www.youtube.com/embed/ECAnEEVUhvw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            <br>
             <article>
-                <h2>A Site Overview</h2>
-                <p>Here I will briefly go over some of the details of this website to make it a little easier to comprehend for you.</p>
-                <h3>Home Page (hint: you're on it!)</h3>
+                <h3>
+                    Basic Steps Overview
+                </h3>
                 <p>
-                    Welcome to the home page! Here I will simply be giving you a aesthetically pleasing introduction to the website.<br>
-                    It will act as a central point for every page on the site.
-                    It may even act as a bit of a quick news digest page regarding the site.
+                    There are 7 steps to solving the cube. 
+                    This won't be too difficult. 
+                    What makes the full method, (the advanced method) so much better is we take 7 steps to only 4 steps.
+                    Even so, this is a lot quicker to pick up because it doesn't take as much memorization.
+                    The steps include:
                 </p>
-                <h3>Solve the Cube!</h3>
+                <ol>
+                    <li><a href="#whiteCross">Solving the "white cross"</a></li>
+                    <li><a href="#whiteCorners">Placing in the white corners</a></li>
+                    <li><a href="#secondLayer">Filling the second layer</a></li>
+                    <li><a href="#yellowCross">Solve the "yellow cross"</a></li>
+                    <li><a href="#yellowEdges">Correcting yellow edges</a></li>
+                    <li><a href="#permutating">Permutating Last Layer</a></li>
+                    <li><a href="#orientating">Orientating Last Layer</a></li>
+                </ol>
+            </article>
+            <article id="whiteCross">
+                <h3>Solving the "white cross"</h3>
                 <p>
-                    This page is going to be centered around the beginners of speed cubing.
-                    Quite simply, it is a step by step guide on how to solve a Rubik's Cube.
-                    It goes over the most popular method, the Fredrich method, but there are many other methods to try out.
-                    Pick one that suits your own tastes!
+                    This step of the cube is entirely done on your own. There is no algorithms.
+                    You want the edge pieces to line up with the colored center pieces on the side, like shown below.
+                    Do this with all four white edge pieces and the respective colors.
                 </p>
-                <h3>Challenge Me</h3>
+                <div class="exampleDiv">
+                    <img src="Assets/goodWhite.svg">
+                    <img src="Assets/badWhite.svg">
+                    <p class="exCaption">Good vs bad white cross</p>
+                </div>
+            </article>
+            <article id="whiteCorners">
+                <h3>Placing in the white corners</h3>
                 <p>
-                    This page may feature a bunch of my own solve statistics.
-                    It also includes a scrambler widget and timer for your own struggles.
-                    By no means should you measure yourself against someone else in order to judge your skill, but the option is there for those of you daring enough!
+                    This part is all about "solving" the entire white face, so your focus can move to the second layer of the cube.
+                    Basically, corner pieces will have 3 colors on them. 
+                    You want the white color to face up with the white face and align them so the colors match the edge pieces you did earlier with the white cross.
+                    When an edge piece is on the D layer, <strong>R' D' R D</strong> will put it in place in the matching spot above. 
+                    The amount of times you do this algorithm may depend on which way the piece is facing.
                 </p>
-                <h3>About Me</h3>
+                <div class="exampleDiv"><img src="Assets/finishedWhite.svg"></div>
+                
+            </article>
+            <article id="secondLayer">
+                <h3>Filling in the second layer</h3>
                 <p>
-                    The fourth and final page is my about page.
-                    Here you can find a form to send me any comments or questions about certain aspects of the website or cubing itself.
-                    You might also find other places I'm actively partipating in, so come find me!
+                    Until this point the procedure was pretty straight forward but from now on we have to use algorithms. 
+                    We can forget the completed white face so let's turn the cube upside down to focus on the unsolved side.
+                    In this step we are completing the first two layers (F2L). There are two symmetric algorithms we have to use in this step. They're called the <strong>Right</strong> and <strong>Left</strong> algorithms. These algorithms insert the Up-Front edge piece from the top layer to the middle layer while not messing up the solved white face.
+                    For these algorithms to work, we need to align the edge so it is facing us then use either the left or right algorithm depending on the situation.<br>
+                    <strong>Left algorithm: U' L' U L U F U' F'</strong><br>
+                    <strong>Right algorithm: U R U' R' U' F' U F</strong>
                 </p>
+                <div class="exampleDiv"><img src="Assets/F2L.svg"></div>
+            </article>
+            <article id="yellowCross">
+                <h3>Solving the "yellow cross"</h3>
+                <p>Sart solving the last layer making a yellow cross on the top of the cube. 
+                    It doesn't matter if the pieces are not on their final places so we don't have to pay attention to the colors of the sides.
+                    We can get three possible patterns on the top. 
+                    Use this algorithm to go from one state to the other:
+                    <strong>F R U R' U' F'</strong>
+                </p>
+                <div class="steps"><img src="Assets/yellowCrossSteps.png"></div>
+                <div class="exampleDiv"><img src="Assets/finishedYellow.svg"></div>
+            </article>
+            <article id="yellowEdges">
+                <h3>Correcting yellow edges</h3>
+                <p>
+                    After making the yellow cross on the top of the cube you have to put the yellow edge pieces on their final places to match the colors of the side center pieces. 
+                    Switch the front and left yellow edges with the following algorithm:
+                    <br><strong>R U R' U R U2 R' U</strong>
+                </p>
+                <div class="exampleDiv">
+                    <img src="Assets/yellowEdgeSwitch.svg">
+                    <img src="Assets/yellowEdgesDone.svg">
+                </div>
+            </article>
+            <article id="permutating">
+                <h3>Permutating the Last Layer</h3>
+                <p>
+                    Only the last layer corners are left unsolved. 
+                    First we have to get them to the right spot, so don't worry about the orientation in this step.
+                    Find a piece which is already on the right place, move it to the right-front-top corner then apply the following algorithm to switch (cycle) the three wrong pieces marked on the image:
+                    <strong>U R U' L' U R' U' L</strong>
+                </p>
+                <div class="exampleDiv"><img src="Assets/yellowCorners.svg"></div>
+            </article>
+            <article id="orientating">
+                <h3>Orientating Last Layer</h3>
+                <p>
+                    Hold the cube in your hand with an unsolved corner on the front-right-top corner, then do the algorithm below twice or four times until that specific piece is oriented well:
+                    <br><strong>R'D'RD</strong>
+                </p>
+                <div class="exampleDiv"><img src="Assets/unorientedYellow.svg"></div>
+                <p>
+                    It will look like you've messed up the whole cube but don't worry, it will be all right when all the corner pieces are oriented.
+                    Turn the top layer only to move another unsolved yellow piece to the front-right-top corner of the cube and do the same <strong>R' D' R D</strong> again until this specific piece is ok. 
+                    Be careful not to move the two bottom layers between the algorithms and never rotate the whole cube!
+                </p>
+                <div class="exampleDiv"><img src="Assets/solved.svg"></div>
+            </article>
+            <article>
+                <h2>Still confused?</h2>
+                <p>
+                    Below is a step by step tutorial. 
+                    Most of the information on this page is a summarized version of what is covered within the video!
+                    Check it out and give it some support.
+                </p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/VeeFwwAz7no" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </article>
         </main>
     </body>

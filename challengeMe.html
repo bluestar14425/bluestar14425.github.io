@@ -29,6 +29,27 @@
                 width: 560px;
                 height: 315px;
             }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            th{
+                vertical-align: center;
+                text-align: center;
+                padding: 2.5%;
+                background-color: #336798;
+                color: white;
+            }
+            th.head{
+                background-color: #AA1D23;
+            }
+            th.horizontal{
+                background-color: #CE9B04;
+            }
+            td{
+                text-align: center;
+                padding: 2.5%;
+            }
         </style>
     </head>
 
@@ -48,7 +69,7 @@
         </div>
         <main>
             <article>
-                <h2>So you want to challenge me...</h2>
+                <h2>So You Want to Challenge Me...</h2>
                 <p>
                     So you've gone through tutorials, and you feel ready to see how you do.
                     I'll be honest, I'm not some crazy good speed solver.
@@ -58,7 +79,53 @@
                     Below are some of my top times.
                 </p>
             </article>
-           
+            <table class="center">
+                <tr>
+                    <th colspan="3" class="head">My Fastest Times</th>
+                </tr>
+                <tr> 
+                    <th rowspan="2">3x3 Cube (Main)</th>
+                    <th class="horizontal">Personal Best</th>
+                    <th class="horizontal">Average Time</th>
+                </tr>
+                <tr>
+                    <td>20.58</td>
+                    <td>29.87</td>
+                </tr>
+                <tr> 
+                    <th rowspan="2">2x2 Cube</th>
+                    <th class="horizontal">Personal Best</th>
+                    <th class="horizontal">Average Time</th>
+                </tr>
+                <tr>
+                    <td>7.36</td>
+                    <td>13.54</td>
+                </tr>
+                <tr> 
+                    <th rowspan="2">4x4 Cube</th>
+                    <th class="horizontal">Personal Best</th>
+                    <th class="horizontal">Average Time</th>
+                </tr>
+                <tr>
+                    <td>55.21</td>
+                    <td>1:20.60</td>
+                </tr>
+            </table>
+            <article>
+                <p>
+                    With my records out of the way, we still have to go and test some of yours, on a 3x3.
+                    Thanks to Ruwix for helping me out with this. 
+                    <br>
+                    At the top is your scramble. 
+                    Scramble the cube according to the algorithm.
+                    When ready hold any key until the hands turn green.
+                    When you release the timer begins (like most competitons) and you begin your solve.
+                    Tap any key to stop the timer. 
+                    Scroll after and see your stats!
+
+                </p>
+            </article>
+            <iframe src="https://ruwix.com/online-rubiks-stopwatch-timer/?des=5&font=5" class="ruwix"></iframe>
         </main>
     </body>
 </html>
